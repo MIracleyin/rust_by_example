@@ -1,6 +1,7 @@
 mod hello;
 mod comment;
 mod print;
+mod debug;
 
 
 #[cfg(test)]
@@ -20,5 +21,10 @@ mod hello_ground {
     #[test]
     fn test_print() {
         print::print();
+    }
+
+    #[test]
+    fn test_debug() {
+        debug::debug();
     }
 }

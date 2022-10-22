@@ -1,5 +1,6 @@
 mod hello;
 mod comment;
+mod print;
 
 
 #[cfg(test)]
@@ -14,5 +15,10 @@ mod hello_ground {
     #[test]
     fn test_comment() {
         comment::comment();
+    }
+
+    #[test]
+    fn test_print() {
+        print::print();
     }
 }

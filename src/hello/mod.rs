@@ -2,6 +2,7 @@ mod hello;
 mod comment;
 mod print;
 mod debug;
+mod display;
 
 
 #[cfg(test)]
@@ -26,5 +27,11 @@ mod hello_ground {
     #[test]
     fn test_debug() {
         debug::debug();
+    }
+
+    #[test]
+    fn test_display() {
+        // display::display1();
+        display::display2();
     }
 }

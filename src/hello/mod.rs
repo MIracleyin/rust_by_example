@@ -3,6 +3,7 @@ mod comment;
 mod print;
 mod debug;
 mod display;
+mod testcase_list;
 
 
 #[cfg(test)]
@@ -33,5 +34,10 @@ mod hello_ground {
     fn test_display() {
         // display::display1();
         display::display2();
+    }
+
+    #[test]
+    fn test_testcase_list() {
+        testcase_list::testcalse_list();
     }
 }

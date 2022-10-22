@@ -39,4 +39,7 @@ pub fn print() {
     // 下面语句无法运行。
     // println!("This struct `{}` won't print...", Structure(3));
     // 改正 ^ 注释掉此行。
+
+    let pi = 3.141592;
+    println!("Pi is roughly {:.3}", pi);
 }

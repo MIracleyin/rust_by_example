@@ -1,5 +1,6 @@
 mod primitive;
 mod literals;
+mod tuples;
 
 #[cfg(test)]
 mod primitives_ground {
@@ -13,5 +14,10 @@ mod primitives_ground {
     #[test]
     fn test_literals() {
         literals::literals();
+    }
+
+    #[test]
+    fn test_tuples() {
+        tuples::tuples();
     }
 }

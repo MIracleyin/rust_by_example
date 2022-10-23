@@ -3,6 +3,7 @@ mod enums;
 mod enum_use;
 mod c_like;
 mod linked_list;
+mod constants;
 
 #[cfg(test)]
 mod customtypes_ground {
@@ -32,5 +33,10 @@ mod customtypes_ground {
     #[test]
     fn test_linked_list() {
         linked_list::linked_list();
+    }
+
+    #[test]
+    fn test_constants() {
+        constants::constants();
     }
 }

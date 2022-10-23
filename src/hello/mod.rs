@@ -4,6 +4,7 @@ mod print;
 mod debug;
 mod display;
 mod testcase_list;
+mod fmt;
 
 
 #[cfg(test)]
@@ -39,5 +40,10 @@ mod hello_ground {
     #[test]
     fn test_testcase_list() {
         testcase_list::testcalse_list();
+    }
+
+    #[test]
+    fn test_fmt() {
+        fmt::fmt();
     }
 }

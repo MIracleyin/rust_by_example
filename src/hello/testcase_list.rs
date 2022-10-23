@@ -15,7 +15,7 @@ impl fmt::Display for List {
             // 对每个元素（第一个元素除外）加上逗号。
             // 使用 `?` 或 `try!` 来返回错误。
             if count != 0 { write!(f, ", ")?; }
-            write!(f, "{}", v)?;
+            write!(f, "{}: {}", count, v)?;
         }
 
         // 加上配对中括号，并返回一个 fmt::Result 值。
@@ -25,6 +25,6 @@ impl fmt::Display for List {
 
 #[allow(dead_code)]
 pub fn testcalse_list() {
-    let v = List(vec![1, 2, 3]);
+    let v = List(vec![1, 2, 3, 4, 5]);
     println!("{}", v);
 }

@@ -58,4 +58,9 @@ mod flow_control_ground {
     fn test_lf_let() {
         if_let::if_let();
     }
+
+    #[test]
+    fn test_while_let() {
+        while_let::while_let();
+    }
 }

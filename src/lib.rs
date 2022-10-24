@@ -5,6 +5,7 @@ mod bindings;
 mod types;
 mod conversion;
 mod expression;
+mod flow_control;
 
 
 pub fn add(left: usize, right: usize) -> usize {

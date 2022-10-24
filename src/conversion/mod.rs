@@ -1,5 +1,6 @@
 mod from_into;
 mod try_from_into;
+mod from_string;
 
 #[cfg(test)]
 mod conversion_ground {
@@ -13,5 +14,10 @@ mod conversion_ground {
     #[test]
     fn test_try_from_into() {
         try_from_into::try_from_into();
+    }
+
+    #[test]
+    fn test_from_string() {
+        from_string::from_string();
     }
 }

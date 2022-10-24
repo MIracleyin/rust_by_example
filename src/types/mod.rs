@@ -1,5 +1,6 @@
 mod cast;
 mod literals;
+mod inference;
 
 #[cfg(test)]
 mod types_ground {
@@ -15,4 +16,8 @@ mod types_ground {
         literals::literals();
     }
 
+    #[test]
+    fn test_inference() {
+        inference::inference();
+    }
 }

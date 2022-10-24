@@ -3,6 +3,8 @@ mod closures;
 mod capture;
 mod input_para;
 mod anonymity;
+mod input_fn;
+mod ouput_para;
 
 // 和 C/C++ 不一样，Rust 的函数定义位置是没有限制的
 fn function() {
@@ -73,6 +75,16 @@ mod function_ground {
     #[test]
     fn test_anonymity() {
         anonymity::anonymity();
+    }
+
+    #[test]
+    fn test_input_fn() {
+        input_fn::input_fn();
+    }
+
+    #[test]
+    fn test_ouput_para() {
+        ouput_para::ouput_para();
     }
 
 

@@ -1,5 +1,6 @@
 mod methods;
 mod closures;
+mod capture;
 
 // 和 C/C++ 不一样，Rust 的函数定义位置是没有限制的
 fn function() {
@@ -55,5 +56,10 @@ mod function_ground {
     #[test]
     fn test_closures() {
         closures::closures();
+    }
+
+    #[test]
+    fn test_capture() {
+        capture::capture();
     }
 }

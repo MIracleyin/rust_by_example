@@ -2,6 +2,8 @@ mod hello;
 mod primitives;
 mod customtypes;
 mod bindings;
+mod types;
+
 
 pub fn add(left: usize, right: usize) -> usize {
     left + right

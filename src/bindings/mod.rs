@@ -1,6 +1,7 @@
 mod mutable;
 mod scope;
 mod declare;
+mod freeze;
 
 
 fn variable_bindings() {
@@ -44,6 +45,11 @@ mod variable_bindings_ground {
     #[test]
     fn test_declear() {
         declare::declear();
+    }
+
+    #[test]
+    fn test_freeze() {
+        freeze::freeze();
     }
     
 

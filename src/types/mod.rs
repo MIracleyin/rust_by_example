@@ -1,6 +1,7 @@
 mod cast;
 mod literals;
 mod inference;
+mod alias;
 
 #[cfg(test)]
 mod types_ground {
@@ -19,5 +20,10 @@ mod types_ground {
     #[test]
     fn test_inference() {
         inference::inference();
+    }
+
+    #[test]
+    fn test_alias() {
+        alias::alias();
     }
 }

@@ -1,5 +1,6 @@
 mod mutable;
 mod scope;
+mod declare;
 
 
 fn variable_bindings() {
@@ -38,6 +39,11 @@ mod variable_bindings_ground {
     #[test]
     fn test_scope() {
         scope::scope();
+    }
+
+    #[test]
+    fn test_declear() {
+        declare::declear();
     }
     
 

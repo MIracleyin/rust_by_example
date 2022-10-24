@@ -24,7 +24,7 @@ struct Rectangle {
 }
 
 impl Rectangle {
-    // 这是一个实例方法（instance method）
+    // 这是一个实例方法（instance method）区别在于参数是否引用 self 
     // `&self` 是 `self: &Self` 的语法糖（sugar），其中 `Self` 是方法调用者的
     // 类型。在这个例子中 `Self` = `Rectangle`
     fn area(&self) -> f64 {

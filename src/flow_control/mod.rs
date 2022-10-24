@@ -6,6 +6,8 @@ mod match_control;
 mod destructure_pointers;
 mod guard;
 mod binding;
+mod if_let;
+mod while_let;
 
 #[cfg(test)]
 mod flow_control_ground {
@@ -50,5 +52,10 @@ mod flow_control_ground {
     #[test]
     fn test_binding() {
         binding::binding();
+    }
+
+    #[test]
+    fn test_lf_let() {
+        if_let::if_let();
     }
 }

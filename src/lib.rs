@@ -4,6 +4,7 @@ mod customtypes;
 mod bindings;
 mod types;
 mod conversion;
+mod expression;
 
 
 pub fn add(left: usize, right: usize) -> usize {

@@ -5,6 +5,8 @@ mod input_para;
 mod anonymity;
 mod input_fn;
 mod ouput_para;
+mod std_example;
+mod hof;
 
 // 和 C/C++ 不一样，Rust 的函数定义位置是没有限制的
 fn function() {
@@ -85,6 +87,16 @@ mod function_ground {
     #[test]
     fn test_ouput_para() {
         ouput_para::ouput_para();
+    }
+
+    #[test]
+    fn test_std_example() {
+        std_example::std_example();
+    }
+
+    #[test]
+    fn test_hof() {
+        hof::hof();
     }
 
 

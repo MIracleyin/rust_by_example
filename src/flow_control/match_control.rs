@@ -33,7 +33,8 @@ pub fn mathch_var() {
 pub fn match_control() {
     // mathch_var();
     // match_tuple();
-    match_enum();
+    // match_enum();
+    match_struct();
 }
 
 pub fn match_tuple() {
@@ -88,4 +89,26 @@ pub fn match_enum() {
             println!("Cyan: {}, magenta: {}, yellow: {}, key (black): {}!", c, m, y, k),
         // 不需要其他分支，因为所有的可能性都已覆盖。
     }
+}
+
+pub fn match_struct() {
+    struct Foo { x: (u32, u32), y: u32 }
+
+    // 解构结构体的成员
+    let foo = Foo { x: (1, 2), y: 3 };
+    let Foo { x: (a, b), y } = foo;
+
+    println!("a = {}, b = {},  y = {} ", a, b, y);
+
+    // 可以解构结构体并重命名变量，成员顺序并不重要
+
+    let Foo { y: i, x: j } = foo;
+    println!("i = {:?}, j = {:?}", i, j);
+
+    // 也可以忽略某些变量
+    let Foo { y, .. } = foo;
+    println!("y = {}", y);
+
+    // 这将得到一个错误：模式中没有提及 `x` 字段
+    let Foo { y, x } = foo;
 }

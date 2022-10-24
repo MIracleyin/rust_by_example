@@ -7,6 +7,7 @@ mod conversion;
 mod expression;
 mod flow_control;
 mod function;
+mod module;
 
 
 pub fn add(left: usize, right: usize) -> usize {

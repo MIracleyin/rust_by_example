@@ -17,3 +17,4 @@ pub fn diverging() {
     }
     println!("Sum of odd numbers up to 9 (excluding): {}", sum_odd_numbers(9));
 }
+

@@ -1,4 +1,5 @@
 mod mutable;
+mod scope;
 
 
 fn variable_bindings() {
@@ -33,6 +34,12 @@ mod variable_bindings_ground {
     fn test_mutable() {
         mutable::mutable();
     }
+
+    #[test]
+    fn test_scope() {
+        scope::scope();
+    }
+    
 
 
 }

@@ -1,4 +1,4 @@
-
+mod mutable;
 
 
 fn variable_bindings() {
@@ -28,4 +28,11 @@ mod variable_bindings_ground {
     fn test_variable_bindings() {
         variable_bindings();
     }
+
+    #[test]
+    fn test_mutable() {
+        mutable::mutable();
+    }
+
+
 }

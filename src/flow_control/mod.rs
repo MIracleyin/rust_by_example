@@ -4,6 +4,8 @@ mod while_control;
 mod for_control;
 mod match_control;
 mod destructure_pointers;
+mod guard;
+mod binding;
 
 #[cfg(test)]
 mod flow_control_ground {
@@ -40,4 +42,13 @@ mod flow_control_ground {
         destructure_pointers::destructure_pointers();
     }
 
+    #[test]
+    fn test_guard() {
+        guard::guard();
+    }
+
+    #[test]
+    fn test_binding() {
+        binding::binding();
+    }
 }
